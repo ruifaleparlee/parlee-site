@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="pt">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PARLEE — Negotiation Training</title>
+<meta name="description" content="PARLEE: plataforma de treino comercial com IA. As suas equipas praticam negociações difíceis com clientes simulados.">
+<link rel="icon" href="assets/parlee-logo.png">
+<link rel="alternate" hreflang="pt" href="https://parlee.eu/">
+<link rel="alternate" hreflang="es" href="https://parlee.eu/es/">
+<link rel="alternate" hreflang="en" href="https://parlee.eu/en/">
+<style>@font-face{font-family:'Barlow';src:url('assets/Barlow-Regular.ttf') format('truetype');font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:'Barlow';src:url('assets/Barlow-Medium.ttf') format('truetype');font-weight:500;font-style:normal;font-display:swap}@font-face{font-family:'Barlow';src:url('assets/Barlow-SemiBold.ttf') format('truetype');font-weight:600;font-style:normal;font-display:swap}@font-face{font-family:'Barlow Condensed';src:url('assets/BarlowCondensed-SemiBold.ttf') format('truetype');font-weight:600;font-style:normal;font-display:swap}@font-face{font-family:'Barlow Condensed';src:url('assets/BarlowCondensed-Bold.ttf') format('truetype');font-weight:700;font-style:normal;font-display:swap}</style>
+<style>
+body{margin:0;background:#1C1B19}
+a{color:#F2EEE8}a:hover{color:#FFFFFF}
+.p-h{font-family:'Barlow Condensed','Arial Narrow',sans-serif;font-weight:700;letter-spacing:-0.5px}
+.p-hero{display:grid;grid-template-columns:1.1fr 1fr;gap:48px;align-items:center}
+.p-steps{display:grid;grid-template-columns:repeat(3,1fr)}
+.p-eval{display:grid;grid-template-columns:1fr 1.2fr;gap:56px;align-items:center}
+.p-dims{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.p-cred{display:grid;grid-template-columns:1.3fr 1fr;gap:48px;align-items:center}
+.p-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;text-align:center}
+.p-ben{display:grid;grid-template-columns:repeat(3,1fr)}
+.p-cta{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.p-step{padding:8px 32px 8px 0;border-right:1px solid #34322E;margin-right:32px;position:relative}
+.p-step:last-child{border-right:none;margin-right:0}
+.p-ben>div{padding:8px 32px 8px 0;border-right:1px solid #34322E;margin-right:32px}
+.p-ben>div:last-child{border-right:none;margin-right:0}
+.p-navlinks{display:flex;gap:28px;align-items:center}
+@media (max-width: 900px){
+.p-hero,.p-eval,.p-cred,.p-cta{grid-template-columns:1fr}
+.p-steps,.p-ben,.p-dims{grid-template-columns:1fr}
+.p-step,.p-ben>div{border-right:none;margin-right:0;border-bottom:1px solid #34322E;padding:24px 0}
+.p-navlinks a.p-hide{display:none}
+.p-h1{font-size:3rem !important}
+}
+</style>
+<style>html{scroll-behavior:smooth}*{box-sizing:border-box}img{max-width:100%}</style>
+</head>
+<body>
+<div style="background: #1C1B19; color: #F2EEE8; font-family: 'Barlow', 'Helvetica Neue', sans-serif; font-size: 17px; line-height: 1.6">
+
+<header style="border-bottom: 1px solid #34322E; position: sticky; top: 0; background: #1C1B19; z-index: 5">
+<div style="max-width: 1240px; margin: 0 auto; padding: 12px 24px; display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap">
+<a href="#topo" aria-label="PARLEE, início" style="display: block"><img src="assets/parlee-logo.png" alt="PARLEE — Negotiation Training" style="height: 56px; width: auto; display: block"></a>
+<nav class="p-navlinks" aria-label="Principal">
+<span style="display:flex;gap:10px" aria-label="Idioma"><a href="/" lang="pt" style="text-decoration:none;font-size:14px;color:#D98A3D;font-weight:600" aria-current="page">PT</a><a href="/en/" lang="en" style="text-decoration:none;font-size:14px;color:#B3ADA4">EN</a><a href="/es/" lang="es" style="text-decoration:none;font-size:14px;color:#B3ADA4">ES</a></span>
+
+<a class="p-hide" href="#como-funciona" style="text-decoration: none; font-size: 15px; color: #B3ADA4">Como funciona</a>
+<a class="p-hide" href="#empresas" style="text-decoration: none; font-size: 15px; color: #B3ADA4">Para empresas</a>
+<a href="#acesso" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 20px; border-radius: 4px; background: #D98A3D; color: #1C1B19; text-decoration: none; font-size: 15px; font-weight: 600">Pedir demo</a>
+</nav>
+</div>
+</header>
+
+<section id="topo" style="max-width: 1240px; margin: 0 auto; padding: 120px 24px 120px">
+<div class="p-hero">
+<div style="display: flex; flex-direction: column; gap: 24px">
+<span style="font-size: 13px; font-weight: 600; letter-spacing: 2px; color: #D98A3D">PARLEE: PLATAFORMA DE TREINO COMERCIAL COM IA</span>
+<h1 class="p-h p-h1" style="margin: 0; font-size: 4.6rem; line-height: 1">Treine antes de perder o contrato.</h1>
+<p style="margin: 0; font-size: 19px; color: #B3ADA4; max-width: 32rem">A PARLEE é a plataforma de treino comercial com IA onde as suas equipas praticam negociações difíceis com clientes simulados, antes de as enfrentarem na vida real.</p>
+<div style="display: flex; gap: 14px; flex-wrap: wrap; margin-top: 8px">
+<a href="#acesso" style="display: inline-flex; align-items: center; min-height: 56px; padding: 0 30px; border-radius: 4px; background: #D98A3D; color: #1C1B19; text-decoration: none; font-weight: 600">Pedir demonstração</a>
+<a href="#como-funciona" style="display: inline-flex; align-items: center; min-height: 56px; padding: 0 30px; border-radius: 4px; border: 1px solid #4A4742; color: #F2EEE8; text-decoration: none; font-weight: 500">Ver como funciona</a>
+</div>
+</div>
+<svg viewBox="0 0 420 340" style="width: 100%; max-width: 460px; justify-self: center" aria-hidden="true">
+<g stroke="#2C2A27" stroke-width="1"><line x1="0" y1="85" x2="420" y2="85"></line><line x1="0" y1="170" x2="420" y2="170"></line><line x1="0" y1="255" x2="420" y2="255"></line><line x1="105" y1="0" x2="105" y2="340"></line><line x1="210" y1="0" x2="210" y2="340"></line><line x1="315" y1="0" x2="315" y2="340"></line></g>
+<g fill="none" stroke="#D98A3D" stroke-width="2"><path d="M40 70 V40 H70"></path><path d="M350 40 H380 V70"></path><path d="M40 270 V300 H70"></path><path d="M350 300 H380 V270"></path></g>
+<defs><clipPath id="hero-l"><circle cx="175" cy="170" r="88"></circle></clipPath></defs>
+<circle cx="245" cy="170" r="84" fill="#D98A3D" fill-opacity="0.85" clip-path="url(#hero-l)"></circle>
+<circle cx="175" cy="170" r="88" fill="none" stroke="#F2EEE8" stroke-width="3"></circle>
+<circle cx="245" cy="170" r="88" fill="none" stroke="#F2EEE8" stroke-width="3"></circle>
+<circle cx="210" cy="170" r="20" fill="none" stroke="#1C1B19" stroke-width="2" stroke-opacity="0.6"></circle>
+<circle cx="210" cy="170" r="5" fill="#1C1B19"></circle>
+</svg>
+</div>
+</section>
+
+<section id="como-funciona" style="border-top: 1px solid #34322E">
+<div style="max-width: 1240px; margin: 0 auto; padding: 88px 24px">
+<div class="p-steps">
+<div class="p-step"><span class="p-h" style="display: block; font-size: 64px; line-height: 1; color: #5A4430">01</span><h3 class="p-h" style="margin: 28px 0 12px; font-size: 26px">Escolha o cliente simulado</h3><p style="margin: 0; color: #B3ADA4">Cada cliente tem personalidade, contexto e motivações próprias. A objeção que apresenta nem sempre é o seu verdadeiro problema.</p></div>
+<div class="p-step"><span class="p-h" style="display: block; font-size: 64px; line-height: 1; color: #5A4430">02</span><h3 class="p-h" style="margin: 28px 0 12px; font-size: 26px">Converse por escrito ou por voz</h3><p style="margin: 0; color: #B3ADA4">Pratique a negociação em tempo real. A IA responde como um cliente real, com resistência, desvios e pressão.</p></div>
+<div class="p-step"><span class="p-h" style="display: block; font-size: 64px; line-height: 1; color: #5A4430">03</span><h3 class="p-h" style="margin: 28px 0 12px; font-size: 26px">Receba uma avaliação detalhada</h3><p style="margin: 0; color: #B3ADA4">No fim, vê exatamente onde a conversa podia ter mudado e a frase que teria feito a diferença.</p></div>
+</div>
+</div>
+</section>
+
+<section style="border-top: 1px solid #34322E">
+<div style="max-width: 1240px; margin: 0 auto; padding: 96px 24px">
+<div class="p-eval">
+<div style="background: #232220; border: 1px solid #34322E; border-radius: 4px; padding: 28px; text-align: center">
+<svg viewBox="0 0 320 300" style="width: 100%; max-width: 340px" role="img" aria-label="Exemplo de avaliação em seis dimensões, em forma de gráfico radar">
+<g fill="none" stroke="#3A3834" stroke-width="1">
+<polygon points="160,50 246.6,100 246.6,200 160,250 73.4,200 73.4,100"></polygon>
+<polygon points="160,84 217.2,117 217.2,183 160,216 102.8,183 102.8,117"></polygon>
+<polygon points="160,117 188.6,133.5 188.6,166.5 160,183 131.4,166.5 131.4,133.5"></polygon>
+<line x1="160" y1="150" x2="160" y2="50"></line><line x1="160" y1="150" x2="246.6" y2="100"></line><line x1="160" y1="150" x2="246.6" y2="200"></line><line x1="160" y1="150" x2="160" y2="250"></line><line x1="160" y1="150" x2="73.4" y2="200"></line><line x1="160" y1="150" x2="73.4" y2="100"></line>
+</g>
+<polygon points="160,70 225,112.5 229.3,190 160,205 82.1,195 108,120" fill="#D98A3D" fill-opacity="0.18" stroke="#D98A3D" stroke-width="2"></polygon>
+<g fill="#D98A3D"><circle cx="160" cy="70" r="3.5"></circle><circle cx="225" cy="112.5" r="3.5"></circle><circle cx="229.3" cy="190" r="3.5"></circle><circle cx="160" cy="205" r="3.5"></circle><circle cx="82.1" cy="195" r="3.5"></circle><circle cx="108" cy="120" r="3.5"></circle></g>
+<g fill="#B3ADA4" font-size="11" font-family="Barlow, sans-serif" text-anchor="middle">
+<text x="160" y="38">Descoberta</text><text x="272" y="95">Objeções</text><text x="268" y="215">Valor</text><text x="160" y="270">Concessões</text><text x="50" y="215">Avanço</text><text x="50" y="95">Relação</text>
+</g>
+</svg>
+<p style="margin: 12px 0 0; font-size: 14px; color: #B3ADA4">Exemplo de avaliação: 6 dimensões</p>
+</div>
+<div style="display: flex; flex-direction: column; gap: 18px">
+<span style="font-size: 13px; font-weight: 600; letter-spacing: 2px; color: #D98A3D">AVALIAÇÃO</span>
+<h2 class="p-h" style="margin: 0; font-size: 3.2rem; line-height: 1.05">Seis dimensões. Uma visão completa.</h2>
+<p style="margin: 0 0 12px; font-size: 18px; color: #B3ADA4">Cada sessão é avaliada em seis eixos que cobrem o ciclo completo de uma negociação comercial.</p>
+<div class="p-dims">
+<div style="border: 1px solid #34322E; background: #232220; border-radius: 4px; padding: 16px 18px"><strong><span style="color: #D98A3D; font-size: 14px; margin-right: 8px">01</span>Descoberta de necessidades</strong><p style="margin: 6px 0 0; font-size: 14px; color: #B3ADA4">Identifica o problema real por trás da objeção?</p></div>
+<div style="border: 1px solid #34322E; background: #232220; border-radius: 4px; padding: 16px 18px"><strong><span style="color: #D98A3D; font-size: 14px; margin-right: 8px">02</span>Gestão de objeções</strong><p style="margin: 6px 0 0; font-size: 14px; color: #B3ADA4">Responde com precisão ou cede demasiado cedo?</p></div>
+<div style="border: 1px solid #34322E; background: #232220; border-radius: 4px; padding: 16px 18px"><strong><span style="color: #D98A3D; font-size: 14px; margin-right: 8px">03</span>Criação de valor</strong><p style="margin: 6px 0 0; font-size: 14px; color: #B3ADA4">O cliente percebe o que ganha, ou só o que paga?</p></div>
+<div style="border: 1px solid #34322E; background: #232220; border-radius: 4px; padding: 16px 18px"><strong><span style="color: #D98A3D; font-size: 14px; margin-right: 8px">04</span>Concessões</strong><p style="margin: 6px 0 0; font-size: 14px; color: #B3ADA4">Cada concessão tem contrapartida ou é cedida gratuitamente?</p></div>
+<div style="border: 1px solid #34322E; background: #232220; border-radius: 4px; padding: 16px 18px"><strong><span style="color: #D98A3D; font-size: 14px; margin-right: 8px">05</span>Avanço da venda</strong><p style="margin: 6px 0 0; font-size: 14px; color: #B3ADA4">A conversa avança para o fecho ou fica em ciclos?</p></div>
+<div style="border: 1px solid #34322E; background: #232220; border-radius: 4px; padding: 16px 18px"><strong><span style="color: #D98A3D; font-size: 14px; margin-right: 8px">06</span>Relação</strong><p style="margin: 6px 0 0; font-size: 14px; color: #B3ADA4">Constrói confiança ou pressiona sem criar ligação?</p></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section style="border-top: 1px solid #34322E; background: #232220">
+<div style="max-width: 1240px; margin: 0 auto; padding: 72px 24px">
+<div class="p-cred">
+<div><h2 class="p-h" style="margin: 0 0 16px; font-size: 2.4rem; line-height: 1.1">Criada a partir de mais de 20 anos de experiência no setor energético e de uma base sólida em psicologia organizacional.</h2><p style="margin: 0; color: #B3ADA4">Desenvolvida para equipas de vendas de energia e infraestruturas da Península Ibérica.</p></div>
+<div class="p-stats">
+<div><span class="p-h" style="display: block; font-size: 44px; color: #D98A3D">20+</span><span style="font-size: 14px; color: #B3ADA4">anos de experiência comercial</span></div>
+<div><span class="p-h" style="display: block; font-size: 44px; color: #D98A3D">3</span><span style="font-size: 14px; color: #B3ADA4">idiomas: PT, ES, EN</span></div>
+<div><span class="p-h" style="display: block; font-size: 44px; color: #D98A3D">EU</span><span style="font-size: 14px; color: #B3ADA4">dados alojados na Europa</span></div>
+</div>
+</div>
+</div>
+</section>
+
+<section id="empresas" style="border-top: 1px solid #34322E">
+<div style="max-width: 1240px; margin: 0 auto; padding: 96px 24px">
+<span style="font-size: 13px; font-weight: 600; letter-spacing: 2px; color: #D98A3D">PARA EMPRESAS</span>
+<h2 class="p-h" style="margin: 14px 0 56px; font-size: 3.2rem; line-height: 1.05; max-width: 40rem">Equipas mais preparadas. Menos contratos perdidos.</h2>
+<div class="p-ben">
+<div><span style="display: block; width: 32px; height: 2px; background: #D98A3D; margin-bottom: 32px"></span><h3 class="p-h" style="margin: 0 0 12px; font-size: 26px">Progresso mensurável</h3><p style="margin: 0; color: #B3ADA4">Acompanhe a evolução de cada vendedor nas seis dimensões ao longo do tempo.</p></div>
+<div><span style="display: block; width: 32px; height: 2px; background: #D98A3D; margin-bottom: 32px"></span><h3 class="p-h" style="margin: 0 0 12px; font-size: 26px">Treino sem risco</h3><p style="margin: 0; color: #B3ADA4">Os erros acontecem na simulação, não na reunião com o cliente.</p></div>
+<div><span style="display: block; width: 32px; height: 2px; background: #D98A3D; margin-bottom: 32px"></span><h3 class="p-h" style="margin: 0 0 12px; font-size: 26px">Escala sem custo de coaching</h3><p style="margin: 0; color: #B3ADA4">Toda a equipa treina em simultâneo, sem depender da disponibilidade de um formador.</p></div>
+</div>
+</div>
+</section>
+
+<section id="acesso" style="border-top: 1px solid #34322E; background: #232220">
+<div style="max-width: 1240px; margin: 0 auto; padding: 96px 24px">
+<div class="p-cta">
+<div style="display: flex; flex-direction: column; gap: 16px">
+<h2 class="p-h" style="margin: 0; font-size: 3.6rem; line-height: 1">A próxima negociação difícil pode ser treinada hoje.</h2>
+<p style="margin: 0; color: #B3ADA4">Estamos a selecionar um pequeno grupo de empresas para o programa piloto.</p>
+</div>
+<form name="demo-pt" method="POST" action="/obrigado/" data-netlify="true" netlify-honeypot="bot-field" style="display: flex; flex-direction: column; gap: 14px">
+<input type="hidden" name="form-name" value="demo-pt">
+<p hidden><label>Não preencher: <input name="bot-field"></label></p>
+<label for="f-nome" style="font-size: 14px; color: #B3ADA4">Nome</label>
+<input id="f-nome" name="nome" type="text" required autocomplete="name" style="min-height: 52px; padding: 0 16px; background: #1C1B19; color: #F2EEE8; border: 1px solid #4A4742; border-radius: 4px; font: inherit; margin-top: -8px">
+<label for="f-email" style="font-size: 14px; color: #B3ADA4">Email profissional</label>
+<input id="f-email" name="email" type="email" required autocomplete="email" style="min-height: 52px; padding: 0 16px; background: #1C1B19; color: #F2EEE8; border: 1px solid #4A4742; border-radius: 4px; font: inherit; margin-top: -8px">
+<label for="f-empresa" style="font-size: 14px; color: #B3ADA4">Empresa</label>
+<input id="f-empresa" name="empresa" type="text" required autocomplete="organization" style="min-height: 52px; padding: 0 16px; background: #1C1B19; color: #F2EEE8; border: 1px solid #4A4742; border-radius: 4px; font: inherit; margin-top: -8px">
+<label for="f-equipa" style="font-size: 14px; color: #B3ADA4">Dimensão da equipa comercial</label>
+<select id="f-equipa" name="equipa" style="min-height: 52px; padding: 0 14px; background: #1C1B19; color: #F2EEE8; border: 1px solid #4A4742; border-radius: 4px; font: inherit; margin-top: -8px">
+<option>1 a 5 vendedores</option>
+<option>6 a 20 vendedores</option>
+<option>Mais de 20 vendedores</option>
+</select>
+<button type="submit" style="min-height: 56px; border: none; border-radius: 4px; background: #D98A3D; color: #1C1B19; font: inherit; font-weight: 600; cursor: pointer; margin-top: 8px">Pedir demonstração</button>
+<p style="margin: 0; font-size: 13px; color: #8F897F">Usamos os seus dados apenas para o contactar sobre o programa piloto. <a href="/privacidade/">Política de privacidade</a></p>
+</form>
+</div>
+</div>
+</section>
+
+<footer style="border-top: 1px solid #34322E">
+<div style="max-width: 1240px; margin: 0 auto; padding: 24px; display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap; font-size: 14px; color: #8F897F">
+<img src="assets/parlee-logo.png" alt="PARLEE" style="height: 44px; width: auto; display: block">
+<span>© 2026 PARLEE · parlee.eu · <a href="mailto:ruifale@parlee.eu">ruifale@parlee.eu</a> · <a href="/privacidade/" style="color:#B3ADA4">Política de privacidade</a></span>
+</div>
+</footer>
+
+</div>
+</body>
+</html>
